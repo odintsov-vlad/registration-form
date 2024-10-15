@@ -1,44 +1,70 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
+    color: #333;
     margin: 0;
     padding: 0;
 }
+
 .container {
     width: 100%;
     max-width: 400px;
     margin: 50px auto;
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Выразительная тень */
+    box-sizing: border-box;
+    position: relative;
 }
+
 h2 {
     text-align: center;
+    color: #333;
 }
+
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
+
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
+
 input[type="text"], input[type="email"], input[type="password"] {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     box-sizing: border-box;
 }
+
 button {
     width: 100%;
-    padding: 10px;
-    background-color: #28a745;
+    padding: 12px;
+    background-color: #007bff;
     border: none;
     color: white;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Тень для кнопки */
 }
+
 button:hover {
-    background-color: #218838;
+    background-color: #0056b3;
+}
+
+.container:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    z-index: -1;
 }
